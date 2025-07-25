@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  background:  #61ff6ed9;
+   font-family: "Inconsolata", monospace;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* GIỮ NGUYÊN NAVBAR CỦA BẠN */
+.navbar {
+  position: relative;
+}
+
+.navbar ul {
+   list-style-type: none;
+    background: #7759ff;
+    padding: 0px;
+    margin: 0 auto;
+    overflow: hidden;
+  
+  
+}
+
+.logo {
+    max-width: 20px;
+    max-height: fit-content;
+  }
+
+.navbar li {
+    float: inline-start;
+    margin-left: 6px;
+    font-size: 1.4rem;
+  }
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    display: block;
+    text-align: center;
+  }
+.navbar a:hover {
+    background: var(--Color, rgba(0, 0, 0, 0.23));
+    scale: 1.2;
+  }
+.Contact {
+    background-color: #000000;
+    float: right !important;
+    text-decoration: none;
+  }
+/* PHẦN PORTFOLIO CHIA CỘT */
+.portfolio {
+  padding: 60px 5vw 40px;
+  
+  min-height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.grid-item {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 5.5px solid #000000d9;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  background: rgb(255, 253, 153);
+}
+
+.grid-item video,
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  padding: 10px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.1rem;
+  color: #333;
+}

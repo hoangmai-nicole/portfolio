@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Slide 1</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styleabout.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html"><img class="logo" src="Group 32.png" /></a>
+        </li>
+        <li><a href="indexabout.html">About</a></li>
+        <li><a href="indexwork.html">Work</a></li>
+        <li class="Contact"><a href="indexcontact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- CHỮ CHẠY -->
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <span>THE GIRL IN THE MIDDLE? THAT'S ME!!! &nbsp; WHAT DEVICES CAN I USE? &nbsp; WHAT AM I? &nbsp; WHO AM I? &nbsp;</span>
+      </div>
+    </div>
+
+    <!-- PHẦN CHÍNH: card lật -->
+    <main>
+      <div class="card-container">
+        <!-- CARD 1 -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="Group 14.svg" alt="Card Front 1" />
+            </div>
+            <div class="card-back">
+              Nguyen Tran Hoang Mai or Mai. (^o^)
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="Group 15.svg" alt="Card Front 2" />
+            </div>
+            <div class="card-back">
+              Currently a digital-media student at RMIT University.
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="Group 16.svg" alt="Card Front 3" />
+            </div>
+            <div class="card-back">
+              I can use: Figma, Blender, Maya, Adobe Illustrator, Procreate
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card" onclick="flipCard(this)">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="Group 17.svg" alt="Card Front 4" />
+            </div>
+            <div class="card-back">
+              <img
+                src="mai.png"
+                alt="Animated Face"
+                style="width: 80%; height: auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
+
+    <!-- JS -->
+    <script>
+      function flipCard(cardElement) {
+        cardElement.classList.toggle('is-flipped');
+      }
+    </script>
+  </body>
+</html>
